@@ -14,10 +14,3 @@
  *
  */
 
-namespace StubbornGrass\UserFaker;
-class Test {
-    public function test() {
-
-        echo "HelloWorld";
-    }
-}
