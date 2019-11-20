@@ -28,7 +28,7 @@ class  Avatar
     private $timeout = 2.0;
     private $avatarCount = 10000;
 
-    public $i = 7359;
+    public $i = 0;
 
     public function __construct($url = null, $timeout = null, $avatarCount = 10000)
     {
@@ -45,7 +45,7 @@ class  Avatar
     }
 
 
-    public function handle($link = "touxiang/nan/2019/891760.html")
+    public function handle($link = "touxiang/nv/2019/889630.html")
     {
 
 
@@ -83,13 +83,13 @@ class  Avatar
         if (file_exists($filepath)) {
             // "当前目录中，文件存在"，追加
             $myfile = fopen($filepath, "a") or die("Unable to open file!");
-            fwrite($myfile, $content . "\r\n");
+            fwrite($myfile, "http:" . $content . "\r\n");
             // 记得关闭流
             fclose($myfile);
         } else {
             // "当前目录中，文件不存在",新写入
             $myfile = fopen($filepath, "w") or die("Unable to open file!");
-            fwrite($myfile, $content . "\r\n");
+            fwrite($myfile, "http:" . $content . "\r\n");
             // 记得关闭流
             fclose($myfile);
         }
