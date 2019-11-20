@@ -1,7 +1,7 @@
 <?php
 /**
- * Nickname.php
- * 昵称数据
+ * Avatar.php
+ * 头像数据
  *
  *
  * @copyright Copyright (c) 2018-2019 http://www.gamerpark.com
@@ -19,20 +19,22 @@ require '../vendor/autoload.php';
 use GuzzleHttp\Client;
 use QL\QueryList;
 set_time_limit(0);
-class  Nickname
+
+class  Avatar
 {
 
     private $client = null;
-    private $url = "http://mingzi.jb51.net/";
+    private $url = "https://www.woyaogexing.com/";
     private $timeout = 2.0;
-    private $nicknameCount = 10000;
-    public $i = 0;
+    private $avatarCount = 10000;
 
-    public function __construct($url = null, $timeout = null, $nicknameCount = 10000)
+    public $i = 7359;
+
+    public function __construct($url = null, $timeout = null, $avatarCount = 10000)
     {
         if ($url) $this->url = $url;
         if ($timeout) $this->timeout = $timeout;
-        if ($nicknameCount) $this->nicknameCount = $nicknameCount;
+        if ($avatarCount) $this->avatarCount = $avatarCount;
         $client = new Client([
 //            // Base URI is used with relative requests
             'base_uri' => $this->url,
@@ -43,7 +45,7 @@ class  Nickname
     }
 
 
-    public function handle($link = "haoting/26761.html")
+    public function handle($link = "touxiang/nan/2019/891760.html")
     {
 
 
@@ -52,28 +54,32 @@ class  Nickname
 
         $html = (string)$res->getBody();
         $ql = QueryList::html($html);
-        $nicknames = $ql->find('div>.article>p')->texts();
-        $nextPage = $ql->find('div>.pagelast>a')->attrs("href");
+        $avatars = $ql->rules(array(
+            'image' => array('.tx-img>a>img','src')
+        ))->query()->getData(function($item){
+            return $item['image'];
+        })->all();
+
+
+        $nextPage = $ql->find('div>.listPage>a')->attrs("href")->all();
         if (!count($nextPage)) {
             return false;
         }
         $nextPage = $nextPage[0];
 
-
         /**
-         * 查看是否抓取足够昵称
+         * 查看是否抓取足够头像
          */
-        foreach ($nicknames as $nickname) {
-            if ($this->i > $this->nicknameCount) return false;
-            if ($nickname != '') $this->write($nickname);
+        foreach ($avatars as $avatar) {
+            if ($this->i > $this->avatarCount) return false;
+            if ($avatar != '') $this->write($avatar);
         }
-
         self::handle($nextPage);
     }
 
     public function write($content)
     {
-        $filepath = 'file/nickname.txt';
+        $filepath = 'file/avatar.txt';
         if (file_exists($filepath)) {
             // "当前目录中，文件存在"，追加
             $myfile = fopen($filepath, "a") or die("Unable to open file!");
@@ -91,6 +97,6 @@ class  Nickname
     }
 }
 
-$test = new Nickname();
+$test = new Avatar();
 $test->handle();
 

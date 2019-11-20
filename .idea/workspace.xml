@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/file/nickname.txt" description="&#10;" line="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="67d039e0-bcda-4846-8122-7353a74fba2b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Nickname.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="295">
+              <caret line="20" selection-start-line="20" selection-end-line="21" />
               <folding>
                 <element signature="e#6#246#0#PHP" expanded="true" />
                 <element signature="e#317#339#0#PHP" expanded="true" />
@@ -44,10 +47,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nickname/nickname.txt">
+        <entry file="file://$PROJECT_DIR$/src/Avatar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="5736" column="5" lean-forward="true" selection-start-line="5736" selection-start-column="5" selection-end-line="5736" selection-end-column="5" />
+            <state relative-caret-position="400">
+              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+              <folding>
+                <element signature="e#6#244#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,6 +74,13 @@
       <find>attr</find>
       <find>红梅千雪</find>
       <find>傲世万物</find>
+      <find>$i</find>
+      <find>梦里花</find>
+      <find>浅夏〆忆汐</find>
+      <find>尘烟梦雨如墨染</find>
+      <find>无与伦比的美丽</find>
+      <find>//img2.woyaogexing.com/2019/11/19/1c973ddb600e4f26a06e1daebfbe365b!400x400.jpeg</find>
+      <find>//img2.woyaogexing.com/2019/11/19/3b71e62dfe684e96beb5a929dfcf5e58!400x400.jpeg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,8 +93,10 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Test.php" />
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
-        <option value="$PROJECT_DIR$/src/Nickname.php" />
         <option value="$PROJECT_DIR$/nickname/nickname.txt" />
+        <option value="$PROJECT_DIR$/src/file/avatar.txt" />
+        <option value="$PROJECT_DIR$/src/Nickname.php" />
+        <option value="$PROJECT_DIR$/src/Avatar.php" />
       </list>
     </option>
   </component>
@@ -132,6 +147,12 @@
               <item name="user-faker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="user-faker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user-faker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -142,11 +163,14 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\www\user-faker\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\www\user-faker\src" />
     </key>
@@ -174,12 +198,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573445125262</updated>
       <workItem from="1573445126359" duration="219000" />
-      <workItem from="1573445353549" duration="9484000" />
+      <workItem from="1573445353549" duration="15006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9703000" />
+    <option name="totallyTimeSpent" value="15225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -324,10 +348,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nickname/nickname.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89340">
+          <caret line="5726" column="6" lean-forward="true" selection-start-line="5726" selection-start-column="6" selection-end-line="5726" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file/nickname.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nickname.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="295">
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
           <folding>
             <element signature="e#6#246#0#PHP" expanded="true" />
             <element signature="e#317#339#0#PHP" expanded="true" />
@@ -335,10 +373,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nickname/nickname.txt">
+    <entry file="file://$PROJECT_DIR$/src/file/avatar.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="5736" column="5" lean-forward="true" selection-start-line="5736" selection-start-column="5" selection-end-line="5736" selection-end-column="5" />
+        <state relative-caret-position="386">
+          <caret line="7477" column="79" lean-forward="true" selection-start-line="7477" selection-start-column="79" selection-end-line="7477" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Avatar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#244#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
